@@ -13,5 +13,5 @@ func Demo() {
 	ReadCustomFile()
 
 	// 3. 既存ファイルがあれば確認
-	CheckFileSignature("sample/Lenna.png")
+	CheckFileSignature("sample/bg_sp.jpg.png")
 }

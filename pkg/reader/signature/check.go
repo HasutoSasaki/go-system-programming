@@ -43,6 +43,8 @@ func identifyFileType(signature []byte) {
 		fmt.Println("ファイル形式：JPEG画像")
 	case string(signature[0:4]) == "GIF8":
 		fmt.Println("ファイル形式：GIF画像")
+	case string(signature[0:4]) == "RIFF" && string(signature[8:12]) == "WEBP":
+		fmt.Println("ファイル形式：WEBP画像")
 	case signature[0] == 0x50 && signature[1] == 0x4B:
 		fmt.Println("ファイル形式：ZIP/JAR/DOCX等")
 	case string(signature[0:4]) == "%PDF":
